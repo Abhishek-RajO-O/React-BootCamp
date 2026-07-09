@@ -22,6 +22,8 @@ function App() {
   
 
     useEffect(() => {
+        // removing eslint warning  
+        // eslint-disable-next-line react-hooks/set-state-in-effect 
         passwordGenerator()
     }, [length, numberAllowed, charactersAllowed, passwordGenerator])
 
